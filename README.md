@@ -27,6 +27,8 @@ Alright, we are ready to build our AMI:
 	packer build -var ‘aws_access_key=XXX’ -var ‘aws_secret_key=YYY’ example.json
 
 This will build your AMI with packer. Be aware that this may take some time as packer spins up an instance using the defined source_ami property.
+  
+Also have a look at the passed variables. You should replace those with your **access key** and your **secret key** that you can find in the Amazon AWS Console.
 
 If your build succeeds, you will get a console output like this:
 
@@ -37,3 +39,5 @@ If your build succeeds, you will get a console output like this:
 	eu-central-1: ami-a5acad0a6
 
 You can now use your newly created AMI to spin up EC2 instances!
+
+For more information on the packer template, check the official documentation (which is really great!).
