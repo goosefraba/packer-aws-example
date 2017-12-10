@@ -9,14 +9,14 @@ To install packer, please visit: https://www.packer.io/docs/installation.html
 # General Packer Info
 To validate a packer template file, run
 
-	packer validate example.son
+	packer validate example.json
 
 This will validate your example.json file to be valid and ready to build.
 
 # Create an AMI (EBS)
 Go to aws-ebs-ec2 and validate the packer file (just to be sure):
 
-	packer validate example.son
+	packer validate example.json
 
 The result should be something like this:
 
